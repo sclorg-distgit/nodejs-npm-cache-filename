@@ -3,8 +3,8 @@
 %{?nodejs_find_provides_and_requires}
 
 Name:           %{?scl_prefix}nodejs-npm-cache-filename
-Version:        1.0.1
-Release:        3%{?dist}
+Version:        1.0.2
+Release:        1%{?dist}
 Summary:        Return NPM cache folder
 License:        ISC
 Group:          Development/Languages/Other
@@ -34,6 +34,9 @@ cp -pr package.json index.js \
 %{nodejs_sitelib}/npm-cache-filename
 
 %changelog
+* Mon Nov 30 2015 Tomas Hrcka <thrcka@redhat.com> - 1.0.2-1
+- Rebase to latest upstream version
+
 * Tue Jan 13 2015 Tomas Hrcka <thrcka@redhat.com> - 1.0.1-3
 - Remove undefined macro
 
